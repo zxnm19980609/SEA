@@ -1,0 +1,32 @@
+User:
+	uid*	uname	pwd	role
+
+Course:
+	cid*	cname	ctime	clocat	uid(t)
+
+Student-Course:
+	uid(s)*	cid*	star	cscore
+
+Module:
+	mid*	cid	mname	mlabel
+
+Unit:
+	unid*	mid	unname	unlabel
+
+Homework:
+	hid*	unid	htype	hname
+
+Homework-Student:
+	hid*	uid(s)*	hscore
+
+Discuss:
+	did*	dname	unid
+
+Comment:
+	coid*	did	uid	tcid	cotime	ccontent
+
+Mail:
+	maid*	suid	tuid	maname
+
+Help:
+	heid*	helabel	hename	hefile
